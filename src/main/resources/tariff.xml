@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<tariffs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="tariffsNamespace"
+        xsi:schemaLocation="tariffsNamespace tariff.xsd">
+    <tariff name="123" operatorName="MTS">
+        <payroll>2500</payroll>
+        <callPrices>
+            <inside>100</inside>
+            <outside>500</outside>
+            <homePhone>400</homePhone>
+        </callPrices>
+        <SMSPrice>25</SMSPrice>
+        <Parameters>
+            <favoriteNumber>8 800 555 35 35</favoriteNumber>
+            <charging>minute</charging>
+            <connectionPrice>10</connectionPrice>
+        </Parameters>
+    </tariff>
+    
+    <tariff name="qwe" operatorName="A1">
+        <payroll>5000</payroll>
+        <callPrices>
+            <inside>0</inside>
+            <outside>100</outside>
+            <homePhone>150</homePhone>
+        </callPrices>
+        <SMSPrice>0</SMSPrice>
+        <Parameters>
+            <charging>12-second</charging>
+            <connectionPrice>4500</connectionPrice>
+        </Parameters>
+    </tariff>
+</tariffs>

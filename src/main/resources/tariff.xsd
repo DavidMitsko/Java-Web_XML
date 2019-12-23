@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="tariffsNamespace"
+        xmlns:tns="tariffsNamespace"
+        elementFormDefault="qualified">
+    <element name="tariffs">
+        <complexType>
+            <sequence>
+                <element ref="tns:tariff" minOccurs="2" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="tariff">
+        <complexType>
+            <sequence>
+                <element name="payroll">
+                    <simpleType>
+                        <restriction base="integer">
+                            <minInclusive value="0"/>
+                            <maxInclusive value="5000"/>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="callPrices">
+                    <complexType>
+                        <sequence>
+                            <element name="inside">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <minInclusive value="0"/>
+                                        <maxInclusive value="750"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="outside">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <minInclusive value="0"/>
+                                        <maxInclusive value="1500"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="homePhone">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <minInclusive value="0"/>
+                                        <maxInclusive value="2500"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="SMSPrice">
+                    <simpleType>
+                        <restriction base="integer">
+                            <minInclusive value="0"/>
+                            <maxInclusive value="150"/>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="Parameters">
+                    <complexType>
+                        <sequence>
+                            <element name="favoriteNumber" type="string" minOccurs="0" maxOccurs="5"/>
+                            <element name="charging">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <enumeration value="minute"/>
+                                        <enumeration value="12-second"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="connectionPrice">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <minInclusive value="0"/>
+                                        <maxInclusive value="7000"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+            <attribute name="name" type="string" use="required"/>
+            <attribute name="operatorName" type="string" use="required"/>
+        </complexType>
+    </element>
+</schema>
