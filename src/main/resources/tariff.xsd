@@ -22,7 +22,7 @@
                         </restriction>
                     </simpleType>
                 </element>
-                <element name="callPrices">
+                <element name="call_prices">
                     <complexType>
                         <sequence>
                             <element name="inside">
@@ -41,7 +41,7 @@
                                     </restriction>
                                 </simpleType>
                             </element>
-                            <element name="homePhone">
+                            <element name="home_phone">
                                 <simpleType>
                                     <restriction base="integer">
                                         <minInclusive value="0"/>
@@ -52,7 +52,7 @@
                         </sequence>
                     </complexType>
                 </element>
-                <element name="SMSPrice">
+                <element name="SMS_price">
                     <simpleType>
                         <restriction base="integer">
                             <minInclusive value="0"/>
@@ -60,10 +60,10 @@
                         </restriction>
                     </simpleType>
                 </element>
-                <element name="Parameters">
+                <element name="parameters">
                     <complexType>
                         <sequence>
-                            <element name="favoriteNumber" type="string" minOccurs="0" maxOccurs="5"/>
+                            <element name="favorite_number" type="string" minOccurs="0" maxOccurs="5"/>
                             <element name="charging">
                                 <simpleType>
                                     <restriction base="string">
@@ -72,7 +72,7 @@
                                     </restriction>
                                 </simpleType>
                             </element>
-                            <element name="connectionPrice">
+                            <element name="connection_price">
                                 <simpleType>
                                     <restriction base="integer">
                                         <minInclusive value="0"/>
@@ -85,7 +85,7 @@
                 </element>
             </sequence>
             <attribute name="name" type="string" use="required"/>
-            <attribute name="operatorName" type="string" use="required"/>
+            <attribute name="operator_name" type="string" use="required"/>
         </complexType>
     </element>
 </schema>

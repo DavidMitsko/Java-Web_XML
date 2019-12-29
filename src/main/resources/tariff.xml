@@ -3,32 +3,32 @@
 <tariffs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns="tariffsNamespace"
         xsi:schemaLocation="tariffsNamespace tariff.xsd">
-    <tariff name="123" operatorName="MTS">
+    <tariff name="123" operator_name="MTS">
         <payroll>2500</payroll>
-        <callPrices>
+        <call_prices>
             <inside>100</inside>
             <outside>500</outside>
-            <homePhone>400</homePhone>
-        </callPrices>
-        <SMSPrice>25</SMSPrice>
-        <Parameters>
-            <favoriteNumber>8 800 555 35 35</favoriteNumber>
+            <home_phone>400</home_phone>
+        </call_prices>
+        <SMS_price>25</SMS_price>
+        <parameters>
+            <favorite_number>8 800 555 35 35</favorite_number>
             <charging>minute</charging>
-            <connectionPrice>10</connectionPrice>
-        </Parameters>
+            <connection_price>10</connection_price>
+        </parameters>
     </tariff>
     
-    <tariff name="qwe" operatorName="A1">
+    <tariff name="qwe" operator_name="A1">
         <payroll>5000</payroll>
-        <callPrices>
+        <call_prices>
             <inside>0</inside>
             <outside>100</outside>
-            <homePhone>150</homePhone>
-        </callPrices>
-        <SMSPrice>0</SMSPrice>
-        <Parameters>
+            <home_phone>150</home_phone>
+        </call_prices>
+        <SMS_price>0</SMS_price>
+        <parameters>
             <charging>12-second</charging>
-            <connectionPrice>4500</connectionPrice>
-        </Parameters>
+            <connection_price>4500</connection_price>
+        </parameters>
     </tariff>
 </tariffs>
